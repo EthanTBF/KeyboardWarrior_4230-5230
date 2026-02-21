@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hexbugEnemyMiniboss",
+  "%Name":"obj_keyboard",
   "eventList":[],
   "managed":true,
-  "name":"obj_hexbugEnemyMiniboss",
+  "name":"obj_keyboard",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
