@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"roll_upgrade_choice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"roll_upgrade_choice",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

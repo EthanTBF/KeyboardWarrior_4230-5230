@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"xp_level_limits",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"xp_level_limits",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
