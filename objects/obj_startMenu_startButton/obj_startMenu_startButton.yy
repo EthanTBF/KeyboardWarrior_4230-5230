@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EVO_exKeyrience",
+  "%Name":"obj_startMenu_startButton",
   "eventList":[],
   "managed":true,
-  "name":"obj_EVO_exKeyrience",
+  "name":"obj_startMenu_startButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_exKEYrience",
-    "path":"sprites/spr_exKEYrience/spr_exKEYrience.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

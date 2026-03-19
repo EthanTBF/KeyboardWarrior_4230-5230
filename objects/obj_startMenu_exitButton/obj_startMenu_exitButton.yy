@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EVO_iceKey",
-  "eventList":[],
+  "%Name":"obj_startMenu_exitButton",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":3,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_EVO_iceKey",
+  "name":"obj_startMenu_exitButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_iceKey",
-    "path":"sprites/spr_iceKey/spr_iceKey.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

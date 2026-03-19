@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EVO_key2Defense",
+  "%Name":"obj_startMenu_optionsButton",
   "eventList":[],
   "managed":true,
-  "name":"obj_EVO_key2Defense",
+  "name":"obj_startMenu_optionsButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

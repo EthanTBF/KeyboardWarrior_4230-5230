@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EVO_explosiveKey",
+  "%Name":"obj_startMenu",
   "eventList":[],
   "managed":true,
-  "name":"obj_EVO_explosiveKey",
+  "name":"obj_startMenu",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_explosiveKey",
-    "path":"sprites/spr_explosiveKey/spr_explosiveKey.yy",
+    "name":"spr_mainMenu",
+    "path":"sprites/spr_mainMenu/spr_mainMenu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

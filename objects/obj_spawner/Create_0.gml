@@ -5,6 +5,7 @@ target = noone;
 word_array = load_json_file("WordBank.json");
 
 global.xp = 0;
+global.word_xp = 100;
 global.level = 1;
 
 global.game_paused = false;
