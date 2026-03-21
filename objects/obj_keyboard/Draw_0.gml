@@ -1,5 +1,25 @@
 draw_self();
 
+// armor bar above keyboard
+if (global.upg_key2Defense && global.keyboard_armor_hits > 0) {
+    var bar_x1 = x + 260;
+    var bar_y1 = y - 18;
+    var bar_w = 420;
+    var bar_h = 10;
+
+    var pct = global.keyboard_armor_hits / global.keyboard_armor_max;
+
+    draw_set_color(c_black);
+    draw_rectangle(bar_x1, bar_y1, bar_x1 + bar_w, bar_y1 + bar_h, false);
+
+    draw_set_color(c_blue);
+    draw_rectangle(bar_x1, bar_y1, bar_x1 + bar_w * pct, bar_y1 + bar_h, false);
+
+    draw_set_color(c_white);
+    draw_rectangle(bar_x1, bar_y1, bar_x1 + bar_w, bar_y1 + bar_h, true);
+}
+
+// key press tints
 draw_set_alpha(0.35);
 draw_set_color(make_color_rgb(20, 40, 120));
 

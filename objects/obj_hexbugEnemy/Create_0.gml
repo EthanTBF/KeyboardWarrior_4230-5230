@@ -9,6 +9,7 @@ progress = 0;
 base_speed = 1.5;
 damageDone = 1;
 word = "";
+_typed_letter = "";
 
 ice_slow_timer = 0;
-dance_stun_timer = 0;
+

@@ -26,16 +26,19 @@ global.ice_letters = [];
 
 // Explosive Key
 global.upg_explosive_key = false;
-global.explosive_letter = [];
+global.explosive_letters = [];
 
 // Dance Key Dance
 global.upg_dance_key = false;
 global.disco_letters = [];
+global.dance_freeze_timer = 0;
 
-// ExKEYrience - not finished yet
+// Ex-KEY-rience
 global.upg_exKEYrience = false;
 global.exKey_letters = [];
+global.exKey_bonus = 50;
 
-//Key to a Good Defense - not finished yet
+// Key2Defense
 global.upg_key2Defense = false;
-global.K2G_letters = [];
+global.keyboard_armor_hits = 0;
+global.keyboard_armor_max = 2;

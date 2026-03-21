@@ -19,8 +19,8 @@ draw_set_valign(fa_top);
 
 draw_text(x1 + 20, y1 + 20, "Choose an Upgrade");
 
-var key1 = global.evolve_choice_keys[0];
-var key2 = global.evolve_choice_keys[1];
+var key1 = (global.evolve_choices[0] == "key2defense") ? "SPACE" : global.evolve_choice_keys[0];
+var key2 = (global.evolve_choices[1] == "key2defense") ? "SPACE" : global.evolve_choice_keys[1];
 
 draw_text(x1 + 20, y1 + 80, "[" + key1 + "] " + upgrade_name(global.evolve_choices[0]));
 draw_text(x1 + 20, y1 + 140, "[" + key2 + "] " + upgrade_name(global.evolve_choices[1]));
