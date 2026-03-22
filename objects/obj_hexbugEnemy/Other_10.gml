@@ -5,12 +5,13 @@ var typed = string_upper(self._typed_letter);
 if (typed == expected) {
 	glitch_timer = 10
 
-    // Ice Keycaps: first correct letter slows enemy
+    // Ice Keycaps
     if (global.upg_ice_keycaps && progress == 0 && key_in_array(typed, global.ice_letters)) {
         ice_slow_timer = room_speed *1.5;
 		// particles
 		part_particles_burst(global.ice_hit_sys, x, y, ptcl_ice)
     }
+
     progress++;
 
     // Dance Key Dance: stun if pressed letter is disco
@@ -42,7 +43,24 @@ if (typed == expected) {
 
     // word finished normally
     if (progress >= string_length(word)) {
-        global.xp += 1600;
+        var gained_xp2 = global.word_xp;
+
+        if (global.upg_exKEYrience) {
+            for (var n = 0; n < array_length(global.exKey_letters); n++) {
+                var bonus_letter2 = global.exKey_letters[n];
+                var count2 = 0;
+
+                for (var p = 1; p <= string_length(word); p++) {
+                    if (string_upper(string_char_at(word, p)) == bonus_letter2) {
+                        count2++;
+                    }
+                }
+
+                gained_xp2 += count2 * global.exKey_bonus;
+            }
+        }
+
+        global.xp += gained_xp2;
         instance_destroy();
     }
 

@@ -1,4 +1,3 @@
-//location of each bar
 var x1  = 8;
 var y1  = 8;
 var x2  = 256;
@@ -7,9 +6,13 @@ var gap = 6;
 
 // HP
 var hp_val = instance_exists(obj_keyboard) ? obj_keyboard.hp : 0;
-var hp_max = instance_exists(obj_keyboard) && variable_instance_exists(obj_keyboard, "max_hp")
+var hp_max = instance_exists(obj_keyboard) ? obj_keyboard.max_hp : 20;
 
-draw_healthbar(x1, y1, x2, y1 + h, hp_val, c_black, c_red, c_red, 0, true, true);
+var hp_pct = 0;
+if (hp_max > 0) hp_pct = (hp_val / hp_max) * 100;
+hp_pct = clamp(hp_pct, 0, 100);
+
+draw_healthbar(x1, y1, x2, y1 + h, hp_pct, c_black, c_red, c_lime, 0, true, true);
 
 // XP table
 function xp_threshold_for_level(cl) {

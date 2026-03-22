@@ -41,11 +41,12 @@ global.disco_letters = [];
 global.dance_hit_sys = part_system_create(ptcl_dance)
 part_system_depth(global.dance_hit_sys, -110)
 
-// ExKEYrience - not finished yet
+// Ex-KEY-rience
 global.upg_exKEYrience = false;
 global.exKey_letters = [];
+global.exKey_bonus = 50;
 
-//Key to a Good Defense - not finished yet
+// Key2Defense
 global.upg_key2Defense = false;
 global.K2G_letters = [];
 
