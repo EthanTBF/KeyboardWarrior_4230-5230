@@ -1,4 +1,5 @@
 /// obj_hexbugEnemy : Create
+global.dance_freeze_timer = 0;
 image_xscale = 1
 image_yscale = 1;
 
