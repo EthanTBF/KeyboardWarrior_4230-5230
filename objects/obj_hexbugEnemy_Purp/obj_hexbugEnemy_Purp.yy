@@ -6,8 +6,8 @@
   "name":"obj_hexbugEnemy_Purp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_hexbugEnemy",

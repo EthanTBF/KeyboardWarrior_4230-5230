@@ -10,8 +10,8 @@
   "name":"obj_EVO_Menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gui",
+    "path":"folders/Objects/gui.yy",
   },
   "parentObjectId":null,
   "persistent":false,

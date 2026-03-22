@@ -23,15 +23,23 @@ global.upgrades_owned = [];
 // Ice Keycaps
 global.upg_ice_keycaps = false;
 global.ice_letters = [];
+// particles
+global.ice_hit_sys = part_system_create(ptcl_ice)
+part_system_depth(global.ice_hit_sys, -100)
 
 // Explosive Key
 global.upg_explosive_key = false;
-global.explosive_letters = [];
+global.explosive_letter = [];
+// particles
+global.explosive_hit_sys = part_system_create(ptcl_explode)
+part_system_depth(global.explosive_hit_sys, -120)
 
 // Dance Key Dance
 global.upg_dance_key = false;
 global.disco_letters = [];
-global.dance_freeze_timer = 0;
+// particles
+global.dance_hit_sys = part_system_create(ptcl_dance)
+part_system_depth(global.dance_hit_sys, -110)
 
 // Ex-KEY-rience
 global.upg_exKEYrience = false;
@@ -40,5 +48,11 @@ global.exKey_bonus = 50;
 
 // Key2Defense
 global.upg_key2Defense = false;
-global.keyboard_armor_hits = 0;
-global.keyboard_armor_max = 2;
+global.K2G_letters = [];
+
+// firewall powerup frequency
+firewall_spawn_interval = 3 * room_speed
+firewall_timer = 0
+
+// initiate glitch shader
+bktglitch_init()

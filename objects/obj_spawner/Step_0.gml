@@ -18,6 +18,13 @@ if (!global.game_paused) {
         var r_num = irandom(array_length(word_array) - 1);
         enemy.word = word_array[r_num];
     }
+	
+	// firewall powerup spawn logic
+	firewall_timer++
+    if (firewall_timer >= firewall_spawn_interval) {
+        firewall_timer = 0
+        instance_create_layer(0, 0, "Instances", obj_firewall)
+    }
 
     // select lowest bug as target
     var target = noone;
@@ -39,17 +46,25 @@ if (!global.game_paused) {
         }
     }
 
-    // typing logic
+    // typing logic, targets closest bug as well as all firewall powerups
     if (target != noone && keyboard_lastkey != 0) {
         var ch = chr(keyboard_lastkey);
         ch = string_upper(ch);
 
         if (string_length(ch) == 1 && ch >= "A" && ch <= "Z") {
+        
+        // send to the closest bug (if one exists)
+        if (target != noone) {
             target._typed_letter = ch;
-            with (target) {
-                event_user(0);
-            }
+            with (target) { event_user(0); }
         }
+        
+        // send to firewall on screen
+        with (obj_firewall) {
+            _typed_letter = ch;
+            event_user(0);
+        }
+    }
 
         keyboard_lastkey = 0;
     }

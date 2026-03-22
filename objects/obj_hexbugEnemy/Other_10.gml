@@ -3,50 +3,45 @@ var typed = string_upper(self._typed_letter);
 
 // correct letter
 if (typed == expected) {
+	glitch_timer = 10
 
     // Ice Keycaps
     if (global.upg_ice_keycaps && progress == 0 && key_in_array(typed, global.ice_letters)) {
-        ice_slow_timer = room_speed * 1.5;
+        ice_slow_timer = room_speed *1.5;
+		// particles
+		part_particles_burst(global.ice_hit_sys, x, y, ptcl_ice)
     }
 
     progress++;
 
-    // Dance Key Dance
-    // Dance Key Dance: freeze all enemies for 4 seconds
-	if (global.upg_dance_key) {
-		for (var i = 0; i < array_length(global.disco_letters); i++) {
-			if (typed == global.disco_letters[i]) {
-				global.dance_freeze_timer = room_speed * 4;
-				break;
-				}}}
-
-    // Explosive Key
-    if (global.upg_explosive_key) {
-        for (var j = 0; j < array_length(global.explosive_letters); j++) {
-            if (typed == global.explosive_letters[j]) {
-                var gained_xp = global.word_xp;
-
-                if (global.upg_exKEYrience) {
-                    for (var k = 0; k < array_length(global.exKey_letters); k++) {
-                        var bonus_letter = global.exKey_letters[k];
-                        var count = 0;
-
-                        for (var m = 1; m <= string_length(word); m++) {
-                            if (string_upper(string_char_at(word, m)) == bonus_letter) {
-                                count++;
-                            }}
-
-                        gained_xp += count * global.exKey_bonus;
-                    }}
-
-                global.xp += gained_xp;
-                instance_destroy();
-                exit;
+    // Dance Key Dance: stun if pressed letter is disco
+    if (global.upg_dance_key) {
+        for (var i = 0; i < array_length(global.disco_letters); i++) {
+            if (typed == global.disco_letters[i]) {
+                dance_stun_timer = room_speed;
+				// particles
+				part_particles_burst(global.dance_hit_sys, x, y, ptcl_dance)
+				
+                break;
             }
         }
     }
 
-    // normal completion
+    // Explosive Key: if typed letter matches explosive letter, kill instantly
+    if (global.upg_explosive_key) {
+		for (var i = 0; i < array_length(global.explosive_letters); i++) {
+			if (typed == global.explosive_letters[i]) {
+				// particles
+				part_particles_burst(global.explosive_hit_sys, x, y, ptcl_explode)
+				
+				global.xp += global.word_xp;
+				instance_destroy();
+            exit;
+			}
+		}
+	}
+
+    // word finished normally
     if (progress >= string_length(word)) {
         var gained_xp2 = global.word_xp;
 
