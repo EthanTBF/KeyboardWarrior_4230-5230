@@ -1,16 +1,15 @@
 if (global.game_paused) exit;
-
 // enemy-specific timer
 if (ice_slow_timer > 0) ice_slow_timer--;
-
 // global dance freeze
 if (global.dance_freeze_timer > 0) exit;
 
-var move_spd = base_speed;
+// movement scales with time-based difficulty
+var move_spd = base_speed * global.diff_mult;
 
 // ice movement
 if (ice_slow_timer > 0) {
-    move_spd = base_speed * 0.1;
+    move_spd *= 0.1;
 }
 
 y += move_spd;

@@ -20,8 +20,8 @@ if (state == "INPUT") { // lose screen + input initials
     draw_leaderboard_ext(room_width/2, 150, 35, 180, high_scores)
     
     draw_set_color(c_white)
-    draw_text(room_width/2, room_height - 50, "PRESS SPACE TO REBOOT")
+    draw_text(room_width/2, room_height - 90, "PRESS SPACE TO REBOOT")
 	
 	draw_set_color(c_dkgray)
-    draw_text(room_width/2, room_height - 30, "[SHIFT + R TO RESET LEADERBOARD]")
+    draw_text(room_width/2, room_height - 70, "[SHIFT + R TO RESET LEADERBOARD]")
 }
