@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hexbugGreen",
-    "path":"sprites/spr_hexbugGreen/spr_hexbugGreen.yy",
+    "name":"spr_revisedGreenEnemy",
+    "path":"sprites/spr_revisedGreenEnemy/spr_revisedGreenEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

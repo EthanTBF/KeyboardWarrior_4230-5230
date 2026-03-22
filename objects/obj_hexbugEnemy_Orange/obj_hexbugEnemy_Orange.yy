@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hexbugOrange",
-    "path":"sprites/spr_hexbugOrange/spr_hexbugOrange.yy",
+    "name":"spr_revisedOrangeEnemy",
+    "path":"sprites/spr_revisedOrangeEnemy/spr_revisedOrangeEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

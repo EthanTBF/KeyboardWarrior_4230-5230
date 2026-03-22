@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hexbugPurple",
-    "path":"sprites/spr_hexbugPurple/spr_hexbugPurple.yy",
+    "name":"spr_revisedPurpleEnemy",
+    "path":"sprites/spr_revisedPurpleEnemy/spr_revisedPurpleEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,
