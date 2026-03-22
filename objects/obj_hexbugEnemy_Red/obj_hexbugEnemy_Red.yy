@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hexbugRed",
-    "path":"sprites/spr_hexbugRed/spr_hexbugRed.yy",
+    "name":"spr_revisedRedEnemy",
+    "path":"sprites/spr_revisedRedEnemy/spr_revisedRedEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,
