@@ -1,4 +1,13 @@
-draw_self();
+if (glitch_timer > 0) {
+    glitch_timer--;
+    var _p = glitch_timer / 10
+    
+    glitch_apply_hit(_p)
+    draw_self()
+    shader_reset()
+} else {
+    draw_self()
+}
 
 // word above enemy
 draw_set_halign(fa_left);

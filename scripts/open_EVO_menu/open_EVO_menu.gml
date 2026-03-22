@@ -8,4 +8,4 @@ function open_EVO_menu() {
     if (!instance_exists(obj_EVO_Menu)) {
         global.evo_menu_id = instance_create_layer(0, 0, "Instances", obj_EVO_Menu);
     }
-}
+}			

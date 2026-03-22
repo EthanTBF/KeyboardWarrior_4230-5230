@@ -19,3 +19,8 @@ for (var c = ord("A"); c <= ord("Z"); c++) {
 if (keyboard_check_pressed(vk_space)) {
     key_timers[? "SPACE"] = press_time_default;
 }
+
+// Go to lose screen on death
+if (hp <= 0) {
+	room_goto(rm_loseScreen)
+}

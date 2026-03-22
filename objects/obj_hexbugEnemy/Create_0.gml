@@ -7,8 +7,10 @@ y = -sprite_get_height(sprite_index) - 16;
 
 progress = 0;
 base_speed = 1.5;
-damageDone = 1;
+damageDone = 10;
 word = "";
 
 ice_slow_timer = 0;
 dance_stun_timer = 0;
+
+glitch_timer = 0
