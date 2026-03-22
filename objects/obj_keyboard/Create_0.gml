@@ -1,4 +1,4 @@
-max_hp = 5;
+max_hp = 100;
 hp = max_hp;
 
 // how long a key stays visually pressed
