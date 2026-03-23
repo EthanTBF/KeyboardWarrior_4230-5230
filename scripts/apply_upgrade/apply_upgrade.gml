@@ -1,4 +1,4 @@
-function apply_upgrade(_id) {
+function apply_upgrade(_id, _choice_index = -1) {
     if (!variable_global_exists("ice_letters")) global.ice_letters = [];
     if (!variable_global_exists("explosive_letters")) global.explosive_letters = [];
     if (!variable_global_exists("disco_letters")) global.disco_letters = [];
@@ -34,7 +34,16 @@ function apply_upgrade(_id) {
 
         case "dance_key":
             global.upg_dance_key = true;
-            global.disco_letters = random_three_letters();
+
+            if (_choice_index >= 0
+                && variable_global_exists("evolve_choice_data")
+                && array_length(global.evolve_choice_data) > _choice_index
+                && variable_struct_exists(global.evolve_choice_data[_choice_index], "disco_letters")) {
+                
+                global.disco_letters = global.evolve_choice_data[_choice_index].disco_letters;
+            } else {
+                global.disco_letters = random_three_letters();
+            }
             break;
 
         case "exKeyrience":

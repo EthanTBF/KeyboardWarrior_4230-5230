@@ -10,13 +10,13 @@ var k1 = (choice0 == "key2defense") ? vk_space : ord(global.evolve_choice_keys[0
 var k2 = (choice1 == "key2defense") ? vk_space : ord(global.evolve_choice_keys[1]);
 
 if (keyboard_check_pressed(k1)) {
-    apply_upgrade(choice0);
+    apply_upgrade(choice0, 0);
     close_EVO_menu();
     exit;
 }
 
 if (keyboard_check_pressed(k2)) {
-    apply_upgrade(choice1);
+    apply_upgrade(choice1, 1);
     close_EVO_menu();
     exit;
 }

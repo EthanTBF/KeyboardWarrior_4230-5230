@@ -22,7 +22,14 @@ draw_text(x1 + 20, y1 + 20, "Choose an Upgrade");
 var key1 = (global.evolve_choices[0] == "key2defense") ? "SPACE" : global.evolve_choice_keys[0];
 var key2 = (global.evolve_choices[1] == "key2defense") ? "SPACE" : global.evolve_choice_keys[1];
 
-draw_text(x1 + 20, y1 + 80, "[" + key1 + "] " + upgrade_name(global.evolve_choices[0]));
-draw_text(x1 + 20, y1 + 140, "[" + key2 + "] " + upgrade_name(global.evolve_choices[1]));
+var choice0 = global.evolve_choices[0];
+var choice1 = global.evolve_choices[1];
+
+draw_text(x1 + 20, y1 + 80, "[" + key1 + "] " + upgrade_name(choice0));
+draw_text(x1 + 20, y1 + 140, "[" + key2 + "] " + upgrade_name(choice1));
+
+// descriptions
+draw_text_ext(x1 + 40, y1 + 105, evo_desc(choice0, 0), -1, (x2 - x1) - 80);
+draw_text_ext(x1 + 40, y1 + 165, evo_desc(choice1, 1), -1, (x2 - x1) - 80);
 
 draw_text(x1 + 20, y2 - 40, "Press the shown key");

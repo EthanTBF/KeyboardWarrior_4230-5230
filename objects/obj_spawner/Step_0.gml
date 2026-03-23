@@ -8,7 +8,7 @@ if (!global.game_paused) {
 	if (!variable_global_exists("diff_max")) global.diff_max = 2.5;
     global.game_time_frames += 1;
 
-    // difficulty increases every 15 seconds 
+    // speedups
     var time_seconds = global.game_time_frames / room_speed;
     var diff_steps = floor(time_seconds / global.diff_step_seconds);
     global.diff_mult = 1.0 + (diff_steps * global.diff_step_amount);
@@ -34,6 +34,13 @@ if (!global.game_paused) {
 
         var r_num = irandom(array_length(word_array) - 1);
         enemy.word = word_array[r_num];
+		
+		// keep enemy + word fully on screen
+		var half_sprite_w = sprite_get_width(enemy.sprite_index) * 0.5;
+		var half_word_w = string_width(enemy.word) * 0.5;
+		var half_needed = max(half_sprite_w, half_word_w) + 8;
+
+		enemy.x = clamp(enemy.x, half_needed, room_width - half_needed);
     }
 	
     // firewall powerup spawn logic
