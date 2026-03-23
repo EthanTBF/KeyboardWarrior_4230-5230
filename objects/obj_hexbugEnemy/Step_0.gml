@@ -37,6 +37,7 @@ if (instance_exists(obj_keyboard) && place_meeting(x, y, obj_keyboard)) {
         global.keyboard_armor_hits -= 1;
     } else {
         obj_keyboard.hp -= damageDone;
+		audio_play_sound(snd_playerDamage, 0, false);
         if (obj_keyboard.hp < 0) obj_keyboard.hp = 0;
     }
 
