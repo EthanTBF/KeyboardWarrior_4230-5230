@@ -31,7 +31,7 @@ The goal of the game is to last as long as you can while typing out various word
 
 ---
 
-## Graduate requirements fulfilled: Particle Effects, Pathing, "*save files*".
+## Graduate requirements fulfilled: Particle Effects, Pathing, "*Save Files*".
 
 ### Particle Effects
 When an upgraded key affects an enemy, a corresponding particle effect is displayed as feedback for the player.
