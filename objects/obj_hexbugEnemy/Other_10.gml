@@ -34,8 +34,8 @@ if (typed == expected) {
 			if (typed == global.explosive_letters[i]) {
 				// particles
 				part_particles_burst(global.explosive_hit_sys, x, y, ptcl_explode)
-				
 				global.xp += global.word_xp;
+				audio_play_sound(snd_explosion, 0, false, 1);
 				instance_destroy();
             exit;
 			}

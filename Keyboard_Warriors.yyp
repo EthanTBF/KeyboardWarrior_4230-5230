@@ -64,7 +64,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Keyboard_Warriors",
   "resources":[
@@ -111,7 +111,6 @@
     {"id":{"name":"upgrade_name","path":"scripts/upgrade_name/upgrade_name.yy",},},
     {"id":{"name":"xp_level_limits","path":"scripts/xp_level_limits/xp_level_limits.yy",},},
     {"id":{"name":"shdBktGlitch","path":"shaders/shdBktGlitch/shdBktGlitch.yy",},},
-    {"id":{"name":"lose","path":"sounds/lose/lose.yy",},},
     {"id":{"name":"snd_explosion","path":"sounds/snd_explosion/snd_explosion.yy",},},
     {"id":{"name":"snd_gameMusic","path":"sounds/snd_gameMusic/snd_gameMusic.yy",},},
     {"id":{"name":"snd_playerDamage","path":"sounds/snd_playerDamage/snd_playerDamage.yy",},},
