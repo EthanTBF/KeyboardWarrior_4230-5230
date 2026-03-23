@@ -97,7 +97,7 @@ if (!global.game_paused) {
     while (global.xp >= xp_level_limit(global.level)) {
         global.level += 1;
 
-        if (global.level mod 5 == 0) {
+        if (global.level mod 2 == 0) {
             open_EVO_menu();
             break;
         }
