@@ -51,7 +51,7 @@ global.upg_key2Defense = false;
 global.K2G_letters = [];
 
 // firewall powerup frequency
-firewall_spawn_interval = 3 * room_speed
+firewall_spawn_interval = 20 * room_speed;
 firewall_timer = 0
 
 // initiate glitch shader
