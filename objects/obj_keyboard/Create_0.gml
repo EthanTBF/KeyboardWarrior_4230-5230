@@ -1,5 +1,6 @@
 max_hp = 100;
 hp = max_hp;
+global.explosive_letters = [];
 
 // how long a key stays visually pressed
 press_time_default = 4;
