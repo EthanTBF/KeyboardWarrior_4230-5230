@@ -1,0 +1,22 @@
+Licensing
+-------------------------------------------------------------------------------------------------------------------------------
+bktGlitch
+Originally released in August 2017 on the GameMaker: Marketplace, now free.
+https://odditica.itch.io/bktglitch
+Developed by Jan Vorisek (@odditica).
+
+DIY Projects Background Music (Free-For-All)
+Composed by CyrelJayVillaro
+
+DIY & Electronics (Vlog Background Music)
+Composed by CyrelJayVillaro
+
+Character crumbled, fried, or frozen
+Link: Free Game SFX & Sounds for Your Projects | SoundDino.com
+
+rockdestroy
+Gamemaker - Space Rocks Tutorial
+How To Make A Retro Space Shooter With GameMaker | GameMaker
+
+Fonts used:
+Aseprite
