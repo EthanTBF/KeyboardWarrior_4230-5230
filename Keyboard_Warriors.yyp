@@ -85,6 +85,7 @@
     {"id":{"name":"obj_startMenu_optionsButton","path":"objects/obj_startMenu_optionsButton/obj_startMenu_optionsButton.yy",},},
     {"id":{"name":"obj_startMenu_startButton","path":"objects/obj_startMenu_startButton/obj_startMenu_startButton.yy",},},
     {"id":{"name":"obj_startMenu","path":"objects/obj_startMenu/obj_startMenu.yy",},},
+    {"id":{"name":"obj_TeamDragons","path":"objects/obj_TeamDragons/obj_TeamDragons.yy",},},
     {"id":{"name":"obj_titleMusic","path":"objects/obj_titleMusic/obj_titleMusic.yy",},},
     {"id":{"name":"ptcl_dance","path":"particles/ptcl_dance/ptcl_dance.yy",},},
     {"id":{"name":"ptcl_explode","path":"particles/ptcl_explode/ptcl_explode.yy",},},
