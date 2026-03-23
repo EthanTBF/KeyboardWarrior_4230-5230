@@ -39,6 +39,9 @@ When an upgraded key affects an enemy, a corresponding particle effect is displa
 * **Dance Key Dance:** Stun effect; Colorful stars are emitted.
 * **Explosive:** A bomb-like explosion effect is emitted.
 
+### Pathing
+A 'firewall' heal powerup follows a path across the screen. This powerup can be claimed by typing the word 'FIREWALL'. The player must be quick as if an enemy runs into the powerup it will be destroyed. The powerup spawns off screen to the left and follows the path zig-zagging across the screen to the right.
+
 ### Shader used: bktGlitch shader
 * When enemies are hit (from typing correct letters), they will ‘glitch’ as feedback to the player.
 * When the player drops to 70hp and 30hp an intensifying glitch effect will cover the game until heals above said thresholds.
