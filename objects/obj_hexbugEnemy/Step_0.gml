@@ -1,10 +1,26 @@
 if (global.game_paused) exit;
-// enemy-specific timer
-if (ice_slow_timer > 0) ice_slow_timer--;
-// global dance freeze
-if (global.dance_freeze_timer > 0) exit;
 
-// movement scales with time-based difficulty
+// enemy-specific timers
+if (ice_slow_timer > 0) ice_slow_timer--;
+if (dance_stun_timer > 0) dance_stun_timer--;
+
+// dance logic
+if (dance_stun_timer > 0) {
+    x = dance_origin_x + lengthdir_x(dance_amplitude, current_time / 8 + dance_offset);
+
+    if (sin(degtorad(current_time / 8 + dance_offset)) >= 0) {
+        image_xscale = base_xscale;
+    } else {image_xscale = -base_xscale;}
+
+    image_yscale = base_yscale;
+    exit;
+} else {
+    dance_origin_x = x;
+    image_xscale = base_xscale;
+    image_yscale = base_yscale;
+}
+
+// movement scales game runtime
 var move_spd = base_speed * global.diff_mult;
 
 // ice movement
@@ -16,7 +32,7 @@ y += move_spd;
 
 // check collision with keyboard
 if (instance_exists(obj_keyboard) && place_meeting(x, y, obj_keyboard)) {
-    // then armor blocks first
+    // armor blocks
     if (global.upg_key2Defense && global.keyboard_armor_hits > 0) {
         global.keyboard_armor_hits -= 1;
     } else {

@@ -18,10 +18,11 @@ if (typed == expected) {
     if (global.upg_dance_key) {
         for (var i = 0; i < array_length(global.disco_letters); i++) {
             if (typed == global.disco_letters[i]) {
-                dance_stun_timer = room_speed;
+				with(obj_hexbugEnemy){
+                dance_stun_timer = room_speed * 4;
 				// particles
 				part_particles_burst(global.dance_hit_sys, x, y, ptcl_dance)
-				
+				}
                 break;
             }
         }
