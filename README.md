@@ -31,7 +31,7 @@ The goal of the game is to last as long as you can while typing out various word
 
 ---
 
-## Graduate requirements fulfilled: Particle Effects, Pathing.
+## Graduate requirements fulfilled: Particle Effects, Pathing, "*save files*".
 
 ### Particle Effects
 When an upgraded key affects an enemy, a corresponding particle effect is displayed as feedback for the player.
@@ -41,6 +41,9 @@ When an upgraded key affects an enemy, a corresponding particle effect is displa
 
 ### Pathing
 A 'firewall' heal powerup follows a path across the screen. This powerup can be claimed by typing the word 'FIREWALL'. The player must be quick as if an enemy runs into the powerup it will be destroyed. The powerup spawns off screen to the left and follows the path zig-zagging across the screen to the right.
+
+### "*Save Files*" (File-Saving)
+Players can submit their scores after losing, with their initials, to be saved in a JSON and displayed on an arcade-style leaderboard viewable on the lose-screen.
 
 ### Shader used: bktGlitch shader
 * When enemies are hit (from typing correct letters), they will ‘glitch’ as feedback to the player.
